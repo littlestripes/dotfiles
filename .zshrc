@@ -101,17 +101,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH=$PATH:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin
 
-# personal aliases
-
-. "$HOME/.cargo/env"
-
-alias python='python3'
-alias note='cd ~/Documents/notes'
-alias ddg='links duckduckgo.com'
-alias code='cd ~/Desktop/code'
-alias z='zsh'
-alias l='ls -alh'
-
 export EDITOR='vim'
 export GOPATH=/Users/administrator/go
 export PATH=/usr/local/opt:$PATH:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:$GOPATH/bin
