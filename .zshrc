@@ -141,7 +141,6 @@ fi
 DateColumn=34 # Default is 27 for 80 character line, 34 for 92 character line
 TimeColumn=61 # Default is 49 for   "   "   "   "    61 "   "   "   "
 
-# Replace Edmonton with your city name, GPS, etc. See: curl wttr.in/:help
 curl "wttr.in/Minneapolis?0m" --silent --max-time 3 > /tmp/now-weather
 # Timeout #. Increase for slow connection---^
 
