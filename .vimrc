@@ -22,6 +22,7 @@ Plugin 'tpope/fugitive-vim'
 Plugin 'klen/python-mode'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
+Plugin 'tmsvg/pear-tree'
 
 call vundle#end()
 filetype plugin indent on
