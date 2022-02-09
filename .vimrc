@@ -26,6 +26,8 @@ Plugin 'xolox/vim-notes'
 Plugin 'tmsvg/pear-tree'
 Plugin 'davidhalter/jedi-vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
+Plugin 'scrooloose/nerdtree'
+Plugin 'mhinz/vim-startify'
 
 call vundle#end()
 filetype plugin indent on
@@ -116,3 +118,6 @@ augroup END
 set scrolljump=3
 set laststatus=2
 set encoding=utf-8
+
+command! Config execute ":e ~/.vimrc"
+command! Reload execute "source ~/.vimrc"
