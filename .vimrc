@@ -31,6 +31,7 @@ Plugin 'mhinz/vim-startify'
 Plugin 'psf/black'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'preservim/nerdcommenter'
+Plugin 'morhetz/gruvbox'
 
 call vundle#end()
 filetype plugin indent on
@@ -128,7 +129,11 @@ set scrolljump=3
 set laststatus=2
 set encoding=utf-8
 
+" commands to modify and reload vimrc
 command! Config execute ":e ~/.vimrc"
 command! Reload execute "source ~/.vimrc"
 
 let g:pymode_lint_on_write = 0
+
+set background=dark
+colorscheme gruvbox
