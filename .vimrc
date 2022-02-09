@@ -28,6 +28,9 @@ Plugin 'davidhalter/jedi-vim'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
 Plugin 'scrooloose/nerdtree'
 Plugin 'mhinz/vim-startify'
+Plugin 'psf/black'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'preservim/nerdcommenter'
 
 call vundle#end()
 filetype plugin indent on
@@ -82,6 +85,11 @@ if has('syntax') && has('eval')
   packadd! matchit
 endif
 
+" my stuff
+
+" explicitly map Leader to \
+let mapleader = "\\"
+
 filetype on
 filetype indent on
 syntax on
@@ -101,6 +109,7 @@ augroup python
     au FileType python set backspace=indent,eol,start
     au FileType python set ruler
     au FileType python set showcmd
+    au FileType python hi ColorColumn ctermbg=8
 augroup END
 
 augroup ruby
@@ -121,3 +130,5 @@ set encoding=utf-8
 
 command! Config execute ":e ~/.vimrc"
 command! Reload execute "source ~/.vimrc"
+
+let g:pymode_lint_on_write = 0
