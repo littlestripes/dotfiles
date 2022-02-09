@@ -18,11 +18,14 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'tpope/fugitive-vim'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'klen/python-mode'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-notes'
 Plugin 'tmsvg/pear-tree'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim'}
 
 call vundle#end()
 filetype plugin indent on
@@ -108,4 +111,8 @@ augroup ruby
     au FileType ruby set shiftwidth=2
     au FileType ruby set backspace=indent,eol,start
     au FileType ruby set expandtab
+augroup END
+
 set scrolljump=3
+set laststatus=2
+set encoding=utf-8
