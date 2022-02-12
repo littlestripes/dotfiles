@@ -32,6 +32,8 @@ Plugin 'psf/black'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'preservim/nerdcommenter'
 Plugin 'morhetz/gruvbox'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'rust-lang/rust.vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -98,6 +100,18 @@ set number
 
 set cursorline
 
+" python stuff
+
+" inserts starter boilerplate
+function PythonStart()
+    let @b = "i#!/usr/bin/env python3"
+    let @m = "idef main():pass"
+    let @i = "iif __name__ == \"__main__\":main():5^"
+    normal @b
+    normal @m
+    normal @i
+endfunction
+
 augroup python
     autocmd!
     au Bufread,BufNewFile *.py set expandtab
@@ -111,6 +125,7 @@ augroup python
     au FileType python set ruler
     au FileType python set showcmd
     au FileType python hi ColorColumn ctermbg=8
+    au FileType python command! PythonStart execute "call PythonStart()"
 augroup END
 
 augroup ruby
@@ -130,10 +145,21 @@ set laststatus=2
 set encoding=utf-8
 
 " commands to modify and reload vimrc
-command! Config execute ":e ~/.vimrc"
+command! Config execute "tabnew ~/.vimrc"
 command! Reload execute "source ~/.vimrc"
 
+" butterfingers
+command! Q execute ":q"
+
+
 let g:pymode_lint_on_write = 0
+let g:jedi#popup_on_dot = 0
+let g:pymode_virtualenv = 1
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_mode_map = {"mode": "passive"}
 
 set background=dark
 colorscheme gruvbox
