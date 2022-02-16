@@ -246,5 +246,7 @@ cal
 #tput rc                     # Restore saved cursor position.
 export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
-export PATH=$PATH:$GOPATH/bin
+export PATH="$PATH:$GOPATH/bin"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
+export CPATH="/usr/local/include:/usr/local/include/gtk-3.0"
+export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/libffi/lib/pkgconfig"
