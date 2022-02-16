@@ -34,6 +34,8 @@ Plugin 'preservim/nerdcommenter'
 Plugin 'morhetz/gruvbox'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'rust-lang/rust.vim'
+Plugin 'fatih/vim-go'
+Plugin 'rhysd/vim-clang-format'
 
 call vundle#end()
 filetype plugin indent on
