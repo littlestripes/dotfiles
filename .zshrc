@@ -119,6 +119,7 @@ alias python='python3'
 alias note='cd ~/Documents/notes'
 alias ddg='links duckduckgo.com'
 alias code='cd ~/Desktop/code'
+alias 100days='cd ~/Desktop/code/python/100days && source venv/bin/activate'
 alias z='zsh'
 alias l='ls -alh'
 
