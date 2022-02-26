@@ -122,6 +122,7 @@ alias code='cd ~/Desktop/code'
 alias 100days='cd ~/Desktop/code/python/100days && source venv/bin/activate'
 alias z='zsh'
 alias l='ls -alh'
+alias make='gmake'
 
 export SUDO_EDITOR='vim'
 export EDITOR='vim'
@@ -251,3 +252,4 @@ export PATH="$PATH:$GOPATH/bin"
 export PATH="/usr/local/opt/ruby/bin:$PATH"
 export CPATH="/usr/local/include:/usr/local/include/gtk-3.0"
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/libffi/lib/pkgconfig"
+export PATH="/usr/local/opt/binutils/bin:$PATH"
