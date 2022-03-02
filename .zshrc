@@ -99,11 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-export PATH=$PATH:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin
-
 export EDITOR='vim'
 export GOPATH=/Users/administrator/go
-export PATH=/usr/local/opt:$PATH:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:$GOPATH/bin
 export LANG=en_us.UTF-8
 
 # personal aliases/command prompt
@@ -246,13 +243,9 @@ cal
 #done < /tmp/terminal
 
 #tput rc                     # Restore saved cursor position.
-export PATH="/usr/local/opt/openssl@3/bin:$PATH"
 
-export PATH="$PATH:$GOPATH/bin"
-export PATH="/usr/local/opt/ruby/bin:$PATH"
 export CPATH="/usr/local/include:/usr/local/include/gtk-3.0"
 export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:/usr/local/opt/libffi/lib/pkgconfig"
-export PATH="/usr/local/opt/binutils/bin:$PATH"
 eval 
             fuck () {
                 TF_PYTHONIOENCODING=$PYTHONIOENCODING;
@@ -270,4 +263,6 @@ eval
                 export PYTHONIOENCODING=$TF_PYTHONIOENCODING;
                 test -n "$TF_CMD" && print -s $TF_CMD
             }
-        
+
+# one path to rule them all	    
+export PATH="/usr/local/opt/binutils/bin:/usr/local/opt/ruby/bin:/usr/local/opt/openssl@3/bin:/usr/local/opt:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/administrator/.cargo/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/administrator/go/bin:/Users/administrator/go/bin:~/.local/bin"
