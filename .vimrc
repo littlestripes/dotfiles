@@ -114,6 +114,7 @@ augroup python
     au FileType python set backspace=indent,eol,start
     au FileType python set ruler
     au FileType python set showcmd
+    au FileType python set shiftround
     au FileType python hi ColorColumn ctermbg=8
     au FileType python command! PythonStart execute "call PythonStart()"
 augroup END
