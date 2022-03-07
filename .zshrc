@@ -120,6 +120,9 @@ alias 100days='cd ~/Desktop/code/python/100days && source venv/bin/activate'
 alias z='zsh'
 alias l='ls -alh'
 alias make='gmake'
+alias gcc11='/opt/local/bin/x86_64-apple-darwin18-gcc-11.2.0'
+alias gcc='gcc11'
+alias lua='/opt/local/bin/lua'
 
 export SUDO_EDITOR='vim'
 export EDITOR='vim'
@@ -265,5 +268,5 @@ eval
             }
 
 # one path to rule them all	    
-export PATH="/usr/local/opt/binutils/bin:/usr/local/opt/ruby/bin:/usr/local/opt/openssl@3/bin:/usr/local/opt:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/administrator/.cargo/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/administrator/go/bin:/Users/administrator/go/bin:~/.local/bin"
+export PATH="/opt/local/bin:/usr/local/opt/binutils/bin:/usr/local/opt/ruby/bin:/usr/local/opt/openssl@3/bin:/usr/local/opt:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/administrator/.cargo/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/administrator/go/bin:/Users/administrator/go/bin:~/.local/bin"
 export PATH="$PATH:/usr/local:/opt:/usr/bin:/bin:/usr/sbin:/Users/administrator/.cargo/bin:/Users/administrator/go/bin:~/.local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin"
