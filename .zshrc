@@ -270,3 +270,5 @@ eval
 # one path to rule them all	    
 export PATH="/opt/local/bin:/usr/local/opt/binutils/bin:/usr/local/opt/ruby/bin:/usr/local/opt/openssl@3/bin:/usr/local/opt:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Users/administrator/.cargo/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/usr/local/bin/:/Library/Frameworks/Python.framework/Versions/3.9/bin:/Users/administrator/go/bin:/Users/administrator/go/bin:~/.local/bin"
 export PATH="$PATH:/usr/local:/opt:/usr/bin:/bin:/usr/sbin:/Users/administrator/.cargo/bin:/Users/administrator/go/bin:~/.local/bin:/Library/Frameworks/Python.framework/Versions/3.9/bin"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
