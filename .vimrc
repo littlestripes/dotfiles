@@ -24,6 +24,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'rust-lang/rust.vim'
 Plugin 'fatih/vim-go'
 Plugin 'rhysd/vim-clang-format'
+Plugin 'neoclide/coc.nvim'
 
 call vundle#end()
 filetype plugin indent on
