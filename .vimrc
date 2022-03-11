@@ -26,6 +26,8 @@ Plugin 'fatih/vim-go'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'ervandew/supertab'
+Plugin 'andrewradev/splitjoin.vim'
+Plugin 'godlygeek/tabular'
 
 call vundle#end()
 filetype plugin indent on
