@@ -145,6 +145,7 @@ command! Reload execute "source ~/.vimrc"
 
 " butterfingers
 command! Q execute ":q"
+command! W execute ":w"
 
 
 let g:pymode_lint_on_write = 0
@@ -157,6 +158,7 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_mode_map = {"mode": "passive"}
 let g:pear_tree_smart_openers = 1
 let g:pear_tree_smart_closers = 1
+let g:pear_tree_smart_backspace = 1
 
 set background=dark
 colorscheme gruvbox
