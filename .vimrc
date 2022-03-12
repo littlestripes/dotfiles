@@ -28,6 +28,7 @@ Plugin 'neoclide/coc.nvim', {'branch': 'release'}
 Plugin 'ervandew/supertab'
 Plugin 'andrewradev/splitjoin.vim'
 Plugin 'godlygeek/tabular'
+Plugin 'artur-shaik/vim-javacomplete2'
 
 call vundle#end()
 filetype plugin indent on
@@ -134,6 +135,16 @@ augroup ruby
     au FileType ruby set backspace=indent,eol,start
     au FileType ruby set expandtab
 augroup END
+
+augroup java
+    autocmd!
+    au FileType java setlocal omnifunc=javacomplete#Complete
+    au FileType java set autoindent
+    au FileType java set ruler
+    au FileType java set backspace=indent,eol,start
+    au FileType java set ruler
+augroup END
+
 
 set scrolljump=3
 set laststatus=2
