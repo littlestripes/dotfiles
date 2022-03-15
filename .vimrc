@@ -29,6 +29,7 @@ Plugin 'ervandew/supertab'
 Plugin 'andrewradev/splitjoin.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'artur-shaik/vim-javacomplete2'
+Plugin 'mattn/emmet-vim'
 
 call vundle#end()
 filetype plugin indent on
