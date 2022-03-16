@@ -125,6 +125,19 @@ augroup python
     au FileType python command! PythonStart execute "call PythonStart()"
 augroup END
 
+augroup html
+    autocmd!
+    au FileType html set expandtab
+    au FileType html set tabstop=2
+    au FileType html set softtabstop=2 
+    au FileType html set shiftwidth=2
+    au FileType html set backspace=indent,eol,start
+    au FileType html set ruler
+    au FileType html set showcmd
+    au FileType html set autoindent
+    au FileType html set shiftround
+augroup END
+
 augroup ruby
     autocmd!
     au FileType ruby set ruler
