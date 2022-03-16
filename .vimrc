@@ -159,6 +159,12 @@ augroup java
     au FileType java set ruler
 augroup END
 
+augroup gitcommit
+    autocmd!
+    au FileType gitcommit setlocal tw=72
+    au FileType gitcommit setlocal formatoptions+=w
+augroup END
+
 
 set scrolljump=3
 set laststatus=2
