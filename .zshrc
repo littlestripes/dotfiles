@@ -112,6 +112,7 @@ alias make='gmake'
 alias gcc11='/opt/local/bin/x86_64-apple-darwin18-gcc-11.2.0'
 alias gcc='gcc11'
 alias lua='/opt/local/bin/lua'
+alias odin='cd Desktop/code/web/odin'
 
 export SUDO_EDITOR='vim'
 export EDITOR='vim'
