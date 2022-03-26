@@ -30,6 +30,7 @@ Plugin 'andrewradev/splitjoin.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'mattn/emmet-vim'
+Plugin 'ap/vim-css-color'
 
 call vundle#end()
 filetype plugin indent on
