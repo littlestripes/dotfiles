@@ -94,10 +94,7 @@ filetype on
 filetype indent on
 syntax on
 set number
-
 set cursorline
-
-" python stuff
 
 " inserts starter boilerplate
 function PythonStart()
@@ -166,7 +163,6 @@ augroup gitcommit
     au FileType gitcommit setlocal formatoptions+=w
 augroup END
 
-
 set scrolljump=3
 set laststatus=2
 set encoding=utf-8
@@ -178,7 +174,6 @@ command! Reload execute "source ~/.vimrc"
 " butterfingers
 command! Q execute ":q"
 command! W execute ":w"
-
 
 let g:pymode_lint_on_write = 0
 let g:jedi#popup_on_dot = 0
