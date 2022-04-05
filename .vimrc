@@ -31,7 +31,6 @@ Plugin 'godlygeek/tabular'
 Plugin 'artur-shaik/vim-javacomplete2'
 Plugin 'mattn/emmet-vim'
 Plugin 'ap/vim-css-color'
-Plugin 'yuttie/comfortable-motion.vim'
 
 call vundle#end()
 filetype plugin indent on
