@@ -150,7 +150,16 @@ augroup java
     au FileType java set autoindent
     au FileType java set ruler
     au FileType java set backspace=indent,eol,start
-    au FileType java set ruler
+augroup END
+
+augroup c
+    autocmd!
+    au FileType c set autoindent
+    au FileType c set ruler
+    au FileType c set backspace=indent,eol,start
+    au FileType c set tabstop=4
+    au FileType c set softtabstop=4
+    au FileType c set shiftwidth=4
 augroup END
 
 augroup gitcommit
