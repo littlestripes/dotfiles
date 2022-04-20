@@ -114,6 +114,7 @@ alias gcc='gcc11'
 alias lua='/opt/local/bin/lua'
 alias odin='cd ~/Desktop/code/web/odin'
 alias mcserver='cd ~/Desktop/game/Minecraft\ Server && ./server.sh'
+alias mpv='open -a mpv'
 
 export SUDO_EDITOR='vim'
 export EDITOR='vim'
