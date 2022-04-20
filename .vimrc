@@ -27,6 +27,7 @@ Plugin 'andrewradev/splitjoin.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'mattn/emmet-vim'
 Plugin 'ap/vim-css-color'
+Plugin 'taglist.vim'
 
 call vundle#end()
 filetype plugin indent on
