@@ -92,6 +92,8 @@ filetype indent on
 syntax on
 set number
 set cursorline
+set tabstop=2
+set softtabstop=2
 
 " inserts starter boilerplate
 function PythonStart()
